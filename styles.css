@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("./assets/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box{
+    width: 650px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.358);
+    border-radius: 45px;
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px white solid;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.779);
+}
+
+.login-box h2{
+  font-size: 48px;
+}
+
+.login-box .input-box{
+  width: 600px;
+  height:300px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-box .input-box input{
+  width: 300px;
+  height: 42px;
+  flex:2;
+  background-color: #dadada6d;
+  border-radius: 50px;
+  color:white;
+  font-size: 18px;
+}
+
+label {
+  flex:1;
+  margin-right: 30px;
+}
+
+.input-box button{
+  width: 200px;
+  height: 50px;
+  background-color: #925db6;
+  color: white;
+  border-radius: 45px;
+  border: 1px white solid;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 1px 1px 10px white;
+  transition: 0.5s;
+}
+
+.input-box button:hover{
+  background-color: transparent;
+  box-shadow: 2px 2px 20px inset #925db6;
+  border: 0px;
+}
+
+.login-box a{
+  font-size: 18px;
+  color:white;
+}
+
+.input-box .input-grp{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
