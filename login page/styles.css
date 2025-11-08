@@ -32,7 +32,7 @@ body {
 }
 
 .login-box h2{
-  font-size: 48px;
+  font-size: 42px;
 }
 
 .login-box .input-box{
@@ -88,4 +88,11 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.input-box img{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  filter: brightness(0) invert(1);
 }
