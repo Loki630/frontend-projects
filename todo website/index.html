@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar-container">
+        <div class="side-bar">
+            <header>
+                <div class="user-header">
+                    <img src="./assets/pfp.jpg" alt="">
+                    <span class="user-text">
+                        Hi, LOKI
+                    </span>
+                </div>
+            </header>
+
+            <div class="menu-links">
+                <ul class="nav-links" style="list-style-type: none;">
+                    <li class="nav-link">
+                        <a href="#">Today</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">Upcoming</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">Completed</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="theme-toggle">
+                <div class="theme-button">
+                    <button>Switch Theme</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="header-bar-container">
+            <div class="header-bar">
+                <span class="header-text">Today</span>
+                <button class="add-task-btn">Add Task</button>
+            </div>
+        </div>
+
+        <div class="main-tasks">
+            <h2 class="intro-text active">
+                No Tasks
+            </h2>
+        </div>
+    </div>
+
+    <div class="task-popup-container">
+        <div class="task-popup">
+            <form class="task-details" autocomplete="off">
+                <div class="input-grp">
+                    <label for="task-input">Enter the Task:</label>
+                    <input type="text" id="task-input" placeholder="Task" required>
+                </div>
+
+                <div class="input-grp">
+                    <label for="date-input">Due Date:</label>
+                    <input type="date" id="date-input"  required>
+                </div>
+
+                <div class="button-grp">
+                    <button type="submit">Add Task</button>
+                </div>
+            </form>
+            <button class="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>

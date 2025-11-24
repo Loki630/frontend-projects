@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Science+Gothic:wght@100..900&display=swap');
+
+body{
+    font-family: "Science Gothic", sans-serif;
+    background: url("./assets/bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    display: flex;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sidebar-container{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.532);
+    width: 250px;
+    height:660px;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.sidebar-container .side-bar{
+    width: 250px;
+    height:630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-bar .user-header{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
+.side-bar .user-header img{
+    width: 45px;
+    height:45px;
+    border-radius: 50px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: white;
+}
+
+.side-bar .menu-links{
+    width:250px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 30px;
+}
+
+.menu-links .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.theme-toggle .theme-button button{
+    width: 200px;
+    height: 30px;
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px white;
+    border: 1px white solid;
+}
+
+.theme-button button:hover{
+    background-color: black;
+    color:white;
+}
+
+.header-bar-container{
+    background-color: rgba(0, 0, 0, 0.532);
+    height: 50px;
+    width: 170vh;
+    border-radius: 15px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bar-container .header-bar{
+    width: 165vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    color: white;
+}
+
+.header-bar button{
+    width: 150px;
+    border-radius: 15px;
+    font-family: "Science Gothic", sans-serif;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 1px 1px  7px white;
+    border: 1px white solid;
+}
+
+.header-bar button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.main-tasks{
+    width: 164vh;
+    height: 555px;
+    margin-left: 30px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.532);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.intro-text{
+    color: white;
+}
+
+.main-tasks .intro-text.active{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+}
+
+.main-tasks .task-card{
+    width: 163vh;
+    height: 100px;
+    padding : 5px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-card .task-content{
+    width: 160vh;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 27px;
+}
+
+.task-content .task-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.task-card .task-content.active .task-text span{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+
+.task-content button{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.task-content .finish{
+    background-color: rgb(47, 255, 61);
+    border: 3px rgb(47, 255, 61) solid;
+    /* box-shadow: 1px 1px 3px rgb(47, 255, 61); */
+}
+
+.task-content .finish:hover{
+    background: transparent;
+    box-shadow: 1px 1px 10px rgb(47, 255, 61);
+}
+
+.task-content .delete{
+    border: 3px rgb(255, 78, 47) solid;
+    background-color: rgb(255, 78, 47);
+    /* box-shadow: 1px 1px 3px rgb(255, 78, 47);  */
+}
+
+.task-content .delete:hover{
+    box-shadow: 1px 1px 3px rgb(255, 78, 47);
+    background: transparent;
+}
+.task-content .edit{
+    background-color: rgb(47, 71, 255);
+    /* box-shadow: 1px 1px 3px rgb(47, 71, 255);  */
+}
+
+.task-popup-container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 15px;
+    color: white;
+    top: 35%;
+    left: 35%;
+    width: 500px;
+    height: 300px;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.task-popup-container.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.task-popup-container .task-popup{
+    width: 400px;
+    height: 300px;
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    gap: 5px;
+}
+
+.task-popup .input-grp input{
+    font-family: "Science Gothic", sans-serif;
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.task-popup .button-grp{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+}
+
+.task-popup button{
+    font-family: "Science Gothic", sans-serif;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.task-popup button:hover{
+    box-shadow: 1px 1px 3px white;
+    background: transparent;
+    color: white;
+}
