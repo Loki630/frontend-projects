@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Science+Gothic:wght@100..900&display=swap');
+
+body{
+    height: 100%;
+    background: url("./assets/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Nunito", sans-serif;
+    display: flex;
+}
+
+#clock-text{
+    color: white;
+    font-family: "Jersey 25", sans-serif;
+    font-size: 200px;
+}
